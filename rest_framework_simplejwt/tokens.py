@@ -36,7 +36,7 @@ class Token:
     token_type: Optional[str] = None
     lifetime: Optional[timedelta] = None
 
-    def __init__(self, token: Optional["Token"] = None, verify: bool = True) -> None:
+    def __init__(self, token: Optional["Token"] = None, verify: bool = False) -> None:
         """
         !!!! IMPORTANT !!!! MUST raise a TokenError with a user-facing error
         message if the given token is invalid, expired, or otherwise not safe
